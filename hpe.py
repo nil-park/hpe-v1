@@ -68,8 +68,8 @@ def decode(a, box):
     cx = a[0] * w + box[0]
     cy = a[1] * w + box[1]
     radius = math.exp(a[2]) * w / 2.0
-    rx = (0.5 - a[3]) * math.pi
-    ry = (0.5 - a[4]) * math.pi
+    rx = (0.5 - a[4]) * math.pi
+    ry = (0.5 - a[3]) * math.pi
     rz = (1 - a[5] * 2) * math.pi
     return [cx, cy, radius, rx, ry, rz, a[6], a[7]]
 

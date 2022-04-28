@@ -6,5 +6,6 @@ track human head and estimate 3D rotation.
 conda create -n hpe-v1 python=3.7
 conda activate hpe-v1
 pip install tflite-runtime
-pip install opencv-python pillow
+pip install opencv-python pillow scipy
+pip install pyrender
 ```
